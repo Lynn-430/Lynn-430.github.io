@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日本拉麵研究報告 | Japanese Ramen Study</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ramen: {
+                            gold: '#D4AF37',
+                            red: '#8B0000',
+                            dark: '#0A0A0B',
+                            card: '#161618',
+                            accent: '#3B82F6'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(22, 22, 24, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #D4AF37, #F97316);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #0A0A0B;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #D4AF37;
+            border-radius: 10px;
+        }
+        .bento-item {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .bento-item:hover {
+            transform: scale(1.02);
+            border-color: rgba(212, 175, 55, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-ramen-dark text-gray-200 font-body selection:bg-ramen-gold selection:text-black overflow-x-hidden">
+
+    <!-- Header Section -->
+    <header class="relative h-[40vh] flex flex-col items-center justify-center text-center px-4 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-ramen-red/20 via-transparent to-transparent opacity-50"></div>
+        <h1 class="font-display text-5xl md:text-7xl font-extrabold tracking-tight mb-4 animate-fade-in-up">
+            <span class="text-gradient">日本拉麵</span> 研究報告
+        </h1>
+        <p class="text-gray-400 max-w-2xl mx-auto text-lg md:text-xl font-light animate-fade-in-up" style="animation-delay: 0.2s">
+            從街頭小吃到全球藝術：探索國民美食的文化、技術與未來
+        </p>
+        <div class="mt-8 animate-bounce">
+            <svg class="w-6 h-6 text-ramen-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-12 space-y-24">
+        
+        <!-- TOP: Infographic Section -->
+        <section id="infographic" class="space-y-8">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="h-1 w-12 bg-ramen-gold rounded-full"></div>
+                <h2 class="text-3xl font-display font-bold">數據視覺化 Infographic</h2>
+            </div>
+            <div class="glass-card rounded-3xl overflow-hidden shadow-2xl p-4 md:p-8">
+                <div class="relative group">
+                    <img src='https://opal.google/board/blobs/670d1ee5-22f0-40ff-a7ba-b6f6f8cf2ae0' alt='media_3' class="w-full h-auto rounded-xl shadow-lg transition-transform duration-700 group-hover:scale-[1.01]" />
+                    <div class="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-xl pointer-events-none"></div>
+                </div>
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="p-6 bg-white/5 rounded-2xl border border-white/5 bento-item">
+                        <div class="text-ramen-gold font-bold text-xl mb-2">歷史演變</div>
+                        <p class="text-sm text-gray-400">從明治時期中國移民飲食演化為國民美食。</p>
+                    </div>
+                    <div class="p-6 bg-white/5 rounded-2xl border border-white/5 bento-item">
+                        <div class="text-ramen-gold font-bold text-xl mb-2">四大湯頭</div>
+                        <p class="text-sm text-gray-400">醬油、鹽味、味噌、豚骨，四大經典派系。</p>
+                    </div>
+                    <div class="p-6 bg-white/5 rounded-2xl border border-white/5 bento-item">
+                        <div class="text-ramen-gold font-bold text-xl mb-2">地域多樣</div>
+                        <p class="text-sm text-gray-400">札幌、博多、喜多方等獨特的在地文化結晶。</p>
+                    </div>
+                    <div class="p-6 bg-white/5 rounded-2xl border border-white/5 bento-item">
+                        <div class="text-ramen-gold font-bold text-xl mb-2">未來創新</div>
+                        <p class="text-sm text-gray-400">全球在地化與 AI 技術引領拉麵進入新紀元。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CENTER: Video & Audio Section -->
+        <section id="media" class="space-y-8">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="h-1 w-12 bg-ramen-gold rounded-full"></div>
+                <h2 class="text-3xl font-display font-bold">職人映像 Video & Audio</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2 glass-card rounded-3xl overflow-hidden relative group">
+                    <video src='https://opal.google/board/blobs/982d0574-5599-46f8-92a5-b149367d59c3' alt='media_1' class="w-full aspect-video object-cover" controls autoplay muted loop></video>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">拉麵職人精神</h3>
+                        <p class="text-gray-400">影像捕捉了拉麵製作的每一個精細瞬間，展現了麵條的質感與湯頭的層次感。</p>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-1 flex flex-col gap-8">
+                    <div class="glass-card rounded-3xl p-8 flex flex-col justify-center items-center text-center flex-grow">
+                        <div class="mb-6 animate-float">
+                            <svg class="w-16 h-16 text-ramen-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">氛圍背景音樂</h3>
+                        <p class="text-sm text-gray-400 mb-6">融合傳統與現代風格的聽覺體驗</p>
+                        <audio src='https://opal.google/board/blobs/6adb113b-74fa-4db0-bc46-652c340a1f3b' alt='media_2' controls class="w-full"></audio>
+                    </div>
+                    
+                    <div class="glass-card rounded-3xl p-8 bg-gradient-to-br from-ramen-red/20 to-ramen-dark">
+                        <div class="text-4xl font-black text-ramen-gold mb-2">M11409928</div>
+                        <p class="text-gray-400 uppercase tracking-widest text-xs">STUDENT IDENTIFICATION</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BOTTOM: Report Content Section -->
+        <section id="report" class="space-y-12">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="h-1 w-12 bg-ramen-gold rounded-full"></div>
+                <h2 class="text-3xl font-display font-bold">深度專題報告 Report</h2>
+            </div>
+
+            <!-- Bento Grid Summary -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="glass-card p-8 rounded-3xl border-l-4 border-l-ramen-gold">
+                    <h3 class="text-xl font-bold mb-4 text-ramen-gold">摘要 (Summary)</h3>
+                    <ul class="space-y-4">
+                        <li class="flex gap-3"><span class="text-ramen-gold">•</span><span><strong>歷史：</strong> 從明治移民飲食到戰後黑市普及。</span></li>
+                        <li class="flex gap-3"><span class="text-ramen-gold">•</span><span><strong>技術：</strong> 鹼水、四大流派及「味 (Tare)」的靈魂。</span></li>
+                        <li class="flex gap-3"><span class="text-ramen-gold">•</span><span><strong>地域：</strong> 札幌味噌、博多豚骨等獨特流派。</span></li>
+                        <li class="flex gap-3"><span class="text-ramen-gold">•</span><span><strong>未來：</strong> 全球化、蔬食化與 AI 自動化轉型。</span></li>
+                    </ul>
+                </div>
+                <div class="glass-card p-8 rounded-3xl border-l-4 border-l-ramen-accent">
+                    <h3 class="text-xl font-bold mb-4 text-ramen-accent">核心技術關鍵詞</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-white/5 rounded-full border border-white/10 text-sm hover:bg-ramen-gold/20 hover:border-ramen-gold transition-colors cursor-default">鹼水 (Kansui)</span>
+                        <span class="px-4 py-2 bg-white/5 rounded-full border border-white/10 text-sm hover:bg-ramen-gold/20 hover:border-ramen-gold transition-colors cursor-default">味 (Tare)</span>
+                        <span class="px-4 py-2 bg-white/5 rounded-full border border-white/10 text-sm hover:bg-ramen-gold/20 hover:border-ramen-gold transition-colors cursor-default">職人精神</span>
+                        <span class="px-4 py-2 bg-white/5 rounded-full border border-white/10 text-sm hover:bg-ramen-gold/20 hover:border-ramen-gold transition-colors cursor-default">全球在地化</span>
+                        <span class="px-4 py-2 bg-white/5 rounded-full border border-white/10 text-sm hover:bg-ramen-gold/20 hover:border-ramen-gold transition-colors cursor-default">低溫熟成</span>
+                        <span class="px-4 py-2 bg-white/5 rounded-full border border-white/10 text-sm hover:bg-ramen-gold/20 hover:border-ramen-gold transition-colors cursor-default">自動化技術</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="glass-card p-8 md:p-12 rounded-[2.5rem] prose prose-invert max-w-none prose-headings:text-ramen-gold prose-h4:text-2xl prose-h4:font-bold prose-h4:mt-12 prose-h4:mb-6">
+                
+                <h2 class="text-4xl font-display font-bold text-center mb-16 text-white border-b border-white/10 pb-8">日本拉麵研究報告全文</h2>
+
+                <div class="space-y-16">
+                    <!-- Chapter 1 -->
+                    <div>
+                        <h4>一、 歷史發展與起源</h4>
+                        <p class="text-gray-300 leading-relaxed mb-6">日本拉麵（Japanese Ramen）的發展是日本現代飲食史的縮影，可歸納為以下關鍵時期：</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                                <span class="text-ramen-gold font-bold block mb-2">1. 起源與融合</span>
+                                <p class="text-sm">源於明治時代中國移民帶入的麵食。1884 年函館已有「南京蕎麥」記載；1910 年來來軒被視為正式起點。</p>
+                            </div>
+                            <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                                <span class="text-ramen-gold font-bold block mb-2">2. 社會動盪與普及</span>
+                                <p class="text-sm">1923 年關東大地震後成為勞工主食。二戰後黑市（Black Market）在美國小麥支持下大規模爆發。</p>
+                            </div>
+                            <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                                <span class="text-ramen-gold font-bold block mb-2">3. 大眾化與精緻化</span>
+                                <p class="text-sm">1958 年速食拉麵問世。1990 年代拉麵升格為具備職人精神（Shokunin Spirit）的文化代表。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chapter 2 -->
+                    <div>
+                        <h4>二、 關鍵技術與結構</h4>
+                        <p class="text-gray-300 leading-relaxed mb-6">拉麵的技術核心建立在麵條、湯頭與醬汁的平衡之上：</p>
+                        <div class="space-y-4">
+                            <div class="flex flex-col md:flex-row gap-4 p-6 bg-white/5 rounded-2xl">
+                                <div class="font-bold text-ramen-gold min-w-[120px]">鹼水 (Kansui)</div>
+                                <p class="text-sm">區隔拉麵與普通麵條的核心，賦予麵條獨特的彈性與淡黃色澤，並導入「低溫熟成」技術。</p>
+                            </div>
+                            <div class="flex flex-col md:flex-row gap-4 p-6 bg-white/5 rounded-2xl">
+                                <div class="font-bold text-ramen-gold min-w-[120px]">湯底分類</div>
+                                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 w-full">
+                                    <div class="text-xs border-r border-white/10 pr-2"><span class="block font-bold">醬油 (Shoyu)</span> 東京發源，雞骨海鮮基底。</div>
+                                    <div class="text-xs border-r border-white/10 pr-2"><span class="block font-bold">鹽味 (Shio)</span> 函館發源，最悠久清澈。</div>
+                                    <div class="text-xs border-r border-white/10 pr-2"><span class="block font-bold">味噌 (Miso)</span> 札幌發源，濃厚且保溫。</div>
+                                    <div class="text-xs"><span class="block font-bold">豚骨 (Tonkotsu)</span> 久留米起源，乳白色濃湯。</div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col md:flex-row gap-4 p-6 bg-white/5 rounded-2xl">
+                                <div class="font-bold text-ramen-gold min-w-[120px]">味 (Tare)</div>
+                                <p class="text-sm">被譽為拉麵的靈魂，決定整碗麵風格的核心醬料，由醬油或魚介濃縮精華組成。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chapter 3 -->
+                    <div>
+                        <h4>三、 地域特色與多樣性</h4>
+                        <p class="text-gray-300 leading-relaxed mb-6">拉麵視為地理環境與在地文化的結晶，展現高度的地域多樣性 (Regional Diversity)：</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="p-6 border border-white/10 rounded-2xl bg-gradient-to-br from-white/5 to-transparent">
+                                <h5 class="text-lg font-bold text-white mb-2">札幌拉麵</h5>
+                                <p class="text-sm text-gray-400">針對寒冷氣候設計，以濃郁味噌配上捲麵。</p>
+                            </div>
+                            <div class="p-6 border border-white/10 rounded-2xl bg-gradient-to-br from-white/5 to-transparent">
+                                <h5 class="text-lg font-bold text-white mb-2">博多拉麵</h5>
+                                <p class="text-sm text-gray-400">乳白色豚骨湯與極細直麵，擁有獨特的加麵 (Kaedama) 文化。</p>
+                            </div>
+                            <div class="p-6 border border-white/10 rounded-2xl bg-gradient-to-br from-white/5 to-transparent">
+                                <h5 class="text-lg font-bold text-white mb-2">喜多方拉麵</h5>
+                                <p class="text-sm text-gray-400">使用高水分的寬扁捲麵，湯頭清爽平衡。</p>
+                            </div>
+                            <div class="p-6 border border-white/10 rounded-2xl bg-gradient-to-br from-white/5 to-transparent">
+                                <h5 class="text-lg font-bold text-white mb-2">橫濱家系 (Iekei)</h5>
+                                <p class="text-sm text-gray-400">融合豚骨與醬油，特色在於厚重雞油與粗麵組合。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chapter 4 -->
+                    <div>
+                        <h4>四、 近年發展與創新趨勢</h4>
+                        <div class="space-y-8">
+                            <div class="relative pl-8 border-l-2 border-ramen-accent">
+                                <div class="absolute -left-[9px] top-0 w-4 h-4 bg-ramen-accent rounded-full ring-4 ring-ramen-dark"></div>
+                                <h5 class="font-bold text-white mb-2">全球在地化 (Glocalization)</h5>
+                                <p class="text-sm text-gray-400">紐約與巴黎等地出現松露、鵝肝等在地食材與拉麵的結合。</p>
+                            </div>
+                            <div class="relative pl-8 border-l-2 border-ramen-accent">
+                                <div class="absolute -left-[9px] top-0 w-4 h-4 bg-ramen-accent rounded-full ring-4 ring-ramen-dark"></div>
+                                <h5 class="font-bold text-white mb-2">蔬食健康趨勢 (Vegan Trends)</h5>
+                                <p class="text-sm text-gray-400">因應市場出現利用大豆蛋白、菇類與堅果模擬油脂感的無豬肉湯頭。</p>
+                            </div>
+                            <div class="relative pl-8 border-l-2 border-ramen-accent">
+                                <div class="absolute -left-[9px] top-0 w-4 h-4 bg-ramen-accent rounded-full ring-4 ring-ramen-dark"></div>
+                                <h5 class="font-bold text-white mb-2">精緻料理 (Fine Dining)</h5>
+                                <p class="text-sm text-gray-400">隨米其林星級認證，拉麵已正式進入高端餐飲領域。</p>
+                            </div>
+                            <div class="relative pl-8 border-l-2 border-ramen-accent">
+                                <div class="absolute -left-[9px] top-0 w-4 h-4 bg-ramen-accent rounded-full ring-4 ring-ramen-dark"></div>
+                                <h5 class="font-bold text-white mb-2">AI 與自動化 (AI Integration)</h5>
+                                <p class="text-sm text-gray-400">利用 AI 開發湯頭比例，並部署自動化拉麵機器人以應對勞動力短缺。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Conclusion -->
+                    <div class="bg-ramen-gold/10 p-8 rounded-3xl border border-ramen-gold/30">
+                        <h4 class="!text-ramen-gold !mt-0 mb-4">簡要結論</h4>
+                        <p class="text-lg text-gray-200 italic leading-relaxed">
+                            「日本拉麵已從 19 世紀的移民街頭小吃，演變為融合日本職人工藝與現代科技的國民美食。其成功的關鍵在於對傳統技術（如鹼水與 Tare）的堅持，以及對地域環境的適應能力。隨著全球化與 AI 技術的介入，拉麵正從平民飲食邁向精緻化與高科技化的新階段。」
+                        </p>
+                    </div>
+
+                    <!-- References -->
+                    <div class="pt-8 border-t border-white/10">
+                        <h4 class="text-sm uppercase tracking-widest text-gray-500 mb-6">引用文獻來源</h4>
+                        <ol class="text-xs text-gray-500 space-y-2 list-decimal list-inside">
+                            <li>George Solt (2014, 2024 update), <i>The Untold History of Ramen</i>.</li>
+                            <li>Barak Kushner (2012/2021 review), <i>Slurp! A Social and Culinary History of Ramen</i>.</li>
+                            <li>Nippon.com (2024 May), <i>Ramen’s Rise from Street Food to Global Phenomenon</i>.</li>
+                            <li>Shin-Yokohama Raumen Museum (2024 Anniversary Archive).</li>
+                            <li>Eat Pro Japan (2025 Report), <i>Regional Diversity in Japanese Culinary Geography</i>.</li>
+                            <li>Scholar Publishing (2024) & Prospect Journal, <i>Trends in Food Glocalization and AI Integration</i>.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Centered Footer-like Info -->
+        <section class="py-24 text-center">
+            <div class="inline-block glass-card px-12 py-8 rounded-full border border-ramen-gold/20 shadow-xl">
+                <p class="text-lg text-gray-400">
+                    【主題探索報告】by <span class="italic text-blue-500 font-semibold">Lynn</span>
+                </p>
+                <p class="text-sm text-gray-500 mt-2 font-display">學號：M11409928</p>
+            </div>
+        </section>
+    </main>
+
+    <div class="fixed bottom-8 right-8 z-50">
+        <a href="#infographic" class="bg-ramen-gold text-black p-3 rounded-full shadow-lg hover:scale-110 transition-transform block mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+        </a>
+    </div>
+
+</body>
+</html>
+
