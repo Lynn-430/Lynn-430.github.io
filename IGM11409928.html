@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Preview - M11409928</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    colors: {
+                        ig: {
+                            blue: '#0095f6',
+                            grey: '#8e8e8e',
+                            dark: '#262626',
+                            bg: '#fafafa'
+                        }
+                    },
+                    boxShadow: {
+                        'premium': '0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .ig-card {
+            background: white;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .aspect-square {
+            aspect-ratio: 1 / 1;
+        }
+
+        .square-img-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 100%; /* 1:1 Aspect Ratio */
+            overflow: hidden;
+            background-color: #f0f0f0;
+        }
+
+        .square-img-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .line-height-relaxed {
+            line-height: 1.6;
+        }
+
+        .icon-hover:hover {
+            opacity: 0.6;
+            transform: scale(1.05);
+            transition: all 0.2s ease;
+        }
+
+        .avatar-gradient {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            padding: 2px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-fade {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Central Post Container -->
+    <main class="ig-card shadow-premium animate-fade">
+        
+        <!-- Header Section -->
+        <header class="flex items-center justify-between px-4 py-3">
+            <div class="flex items-center space-x-3">
+                <div class="avatar-gradient rounded-full">
+                    <div class="w-8 h-8 rounded-full bg-white p-0.5">
+                        <div class="w-full h-full rounded-full bg-gray-200 flex items-center justify-center text-gray-500 font-bold text-[10px]">
+                            SP
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-sm font-bold text-ig-dark hover:underline cursor-pointer">Student Project</span>
+                    <span class="text-xs text-ig-grey">Matsu, Taiwan • Sponsored</span>
+                </div>
+            </div>
+            <button class="text-ig-dark icon-hover">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+            </button>
+        </header>
+
+        <!-- Hero Image -->
+        <div class="square-img-container border-y border-gray-50">
+            <img src='https://opal.google/board/blobs/19ba2fa1-2e6d-40d0-a301-089e756dce7e' alt='media_1' />
+        </div>
+
+        <!-- Interaction Bar -->
+        <div class="px-4 pt-3 pb-2 flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <button class="icon-hover">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-ig-dark hover:text-red-500 hover:fill-red-500 transition-colors"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                <button class="icon-hover">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-ig-dark"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.1a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                </button>
+                <button class="icon-hover">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-ig-dark"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+            </div>
+            <button class="icon-hover">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-ig-dark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+            </button>
+        </div>
+
+        <!-- Caption Content Area -->
+        <div class="px-4 pb-4">
+            <div class="mb-1">
+                <span class="text-sm font-bold text-ig-dark">1,128 likes</span>
+            </div>
+            <div class="text-[14px] line-height-relaxed text-ig-dark">
+                <span class="font-bold mr-1 tracking-tight">M11409928</span>
+                <p class="inline whitespace-pre-line">
+                    【這不是夢境，是馬祖最溫柔的藍色奇蹟 ✨】
+
+                    當夜幕降臨，星空墜入了大海，腳下的浪花綻放出夢幻的螢光藍。親眼目睹這份大自然的饋贈，才懂得什麼叫做「此生必看」。
+
+                    快來馬祖，與我們一起捕捉這場絕美的藍色夢境吧！🌊💙
+                </p>
+            </div>
+            
+            <div class="mt-3 flex flex-wrap gap-x-1.5 text-sm text-ig-blue font-medium">
+                <a href="#" class="hover:text-blue-800 transition-colors">#馬祖</a>
+                <a href="#" class="hover:text-blue-800 transition-colors">#藍眼淚</a>
+                <a href="#" class="hover:text-blue-800 transition-colors">#Matsu</a>
+                <a href="#" class="hover:text-blue-800 transition-colors">#BlueTears</a>
+                <a href="#" class="hover:text-blue-800 transition-colors">#台灣旅遊</a>
+                <a href="#" class="hover:text-blue-800 transition-colors">#追淚攻略</a>
+                <a href="#" class="hover:text-blue-800 transition-colors">#夢幻奇景</a>
+                <a href="#" class="hover:text-blue-800 transition-colors">#離島旅行</a>
+                <a href="#" class="hover:text-blue-800 transition-colors">#大自然的神奇</a>
+                <a href="#" class="hover:text-blue-800 transition-colors">#絕美秘境</a>
+            </div>
+            
+            <div class="mt-2">
+                <span class="text-[10px] uppercase text-ig-grey tracking-wide font-medium">2 hours ago</span>
+            </div>
+        </div>
+
+        <!-- Add Comment Box -->
+        <div class="border-t border-gray-100 px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center flex-1">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-ig-dark mr-3"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+                <input type="text" placeholder="Add a comment..." class="text-sm bg-transparent border-none outline-none w-full placeholder:text-ig-grey">
+            </div>
+            <button class="text-ig-blue font-semibold text-sm opacity-50 cursor-not-allowed">Post</button>
+        </div>
+    </main>
+
+    <!-- Post Info Tag -->
+    <div class="fixed bottom-6 text-[11px] text-ig-grey font-semibold uppercase tracking-[0.2em] animate-fade" style="animation-delay: 0.3s;">
+        Instagram Post Generator
+    </div>
+
+</body>
+</html>
+
