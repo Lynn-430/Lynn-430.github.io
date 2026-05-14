@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>西門町最強「豪邁系」傳說：美觀園台式日料</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#C5A059',
+                            dark: '#0F1115',
+                            accent: '#E63946',
+                            card: 'rgba(255, 255, 255, 0.03)',
+                            glass: 'rgba(15, 17, 21, 0.8)'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                        english: ['Outfit', 'sans-serif']
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0F1115;
+            color: #E2E8F0;
+            overflow-x: hidden;
+            line-height: 1.8;
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #FFF 0%, #C5A059 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .content-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .content-card:hover {
+            border-color: rgba(197, 160, 89, 0.3);
+            background: rgba(255, 255, 255, 0.04);
+        }
+        .drop-cap::first-letter {
+            font-size: 3.5rem;
+            float: left;
+            margin-right: 0.5rem;
+            line-height: 1;
+            color: #C5A059;
+            font-family: 'Noto Serif TC', serif;
+            font-weight: 900;
+        }
+        .image-overlay {
+            background: linear-gradient(0deg, rgba(15, 17, 21, 1) 0%, rgba(15, 17, 21, 0) 50%);
+        }
+        ::selection {
+            background: #C5A059;
+            color: #0F1115;
+        }
+    </style>
+</head>
+<body class="font-body">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-nav px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <div class="w-8 h-8 bg-brand-gold rounded-sm transform rotate-45 flex items-center justify-center">
+                <span class="transform -rotate-45 text-brand-dark font-black text-xs">MK</span>
+            </div>
+            <span class="font-english font-extrabold tracking-widest text-sm uppercase">Legacy & Flavor</span>
+        </div>
+        <div class="hidden md:flex space-x-8 text-xs font-english tracking-tighter uppercase font-medium opacity-70">
+            <span class="hover:text-brand-gold cursor-pointer transition-colors">History</span>
+            <span class="hover:text-brand-gold cursor-pointer transition-colors">Cuisine</span>
+            <span class="hover:text-brand-gold cursor-pointer transition-colors">Legacy</span>
+        </div>
+        <div class="text-[10px] font-english opacity-50 tracking-widest">
+            ID: M11409928
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header class="relative h-screen min-h-[600px] w-full flex items-end overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/90dac78b-c10f-4209-97fe-954031b7c496' alt='media_1' class="w-full h-full object-cover scale-105" />
+            <div class="absolute inset-0 image-overlay"></div>
+            <div class="absolute inset-0 bg-black/30"></div>
+        </div>
+        
+        <div class="relative z-10 container mx-auto px-6 pb-24 md:pb-32">
+            <div class="max-w-4xl animate-fade-in-up">
+                <div class="inline-block px-3 py-1 bg-brand-accent/20 border border-brand-accent/30 text-brand-accent text-xs font-bold tracking-widest uppercase mb-6 rounded-full">
+                    Culinary Heritage
+                </div>
+                <h1 class="text-4xl md:text-7xl font-display font-black leading-tight mb-6">
+                    西門町最強<span class="text-gradient">「豪邁系」</span>傳說
+                </h1>
+                <p class="text-xl md:text-2xl text-white/70 font-display font-light max-w-2xl leading-relaxed">
+                    美觀園台式日料的美味、祕辛與時代側寫
+                </p>
+                <div class="mt-12 flex items-center space-x-4 opacity-60">
+                    <div class="w-12 h-[1px] bg-white"></div>
+                    <span class="font-english text-xs uppercase tracking-widest">Scroll to explore</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-20">
+        <!-- Intro Section with Bento Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-32">
+            <div class="lg:col-span-7 flex flex-col justify-center">
+                <p class="text-lg md:text-xl text-white/80 leading-relaxed drop-cap italic font-display">
+                    走在台北西門町峨眉街，霓虹燈影與青少年喧鬧聲交織成一種特有的現代繁華。然而，如果你稍微慢下腳步，會發現一種奇特的空間並置：兩間招牌一模一樣的「美觀園」在大門相對，空氣中飄散著揉合了炸豬排油香與啤酒麥芽味的氣息。
+                </p>
+            </div>
+            <div class="lg:col-span-5">
+                <div class="content-card p-8 rounded-2xl relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <svg width="100" height="100" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L1 21h22L12 2zm0 3.45l8.27 14.3H3.73L12 5.45z"/></svg>
+                    </div>
+                    <h3 class="text-brand-gold font-english font-bold text-sm tracking-widest mb-4 uppercase">The Philosophy</h3>
+                    <p class="text-white/60 leading-relaxed">
+                        美觀園不是一場感官的誤會，而是橫跨八十載、記錄了台北胃納演進史的活化石。這裡走的是一種「極致豪氣」的庶民路線，用拳頭般厚的鮭魚生魚片直接與顧客的體感對話。
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- History Timeline -->
+        <section class="mb-32">
+            <div class="flex flex-col md:flex-row items-baseline gap-4 mb-12">
+                <h2 class="text-3xl md:text-5xl font-display font-black text-white">從「美觀食堂」到味覺地標</h2>
+                <span class="text-brand-gold font-english text-lg italic tracking-widest">— Since 1946</span>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-white/70">
+                    <p>
+                        美觀園的歷史，本身就是一部精彩的近代史。1946 年，二戰硝煙剛散去，創辦人張良鐵先生帶著跟隨日本主廚習得的手藝，在當時的西門町鐵道旁創立了「美觀食堂」。
+                    </p>
+                    <p>
+                        那個年代的西門町，正從戰後的廢墟中甦醒，而美觀園提供的炸豬排與快餐，在當時簡直是「潮流」與「地位」的代名詞。能在美觀園吃上一頓，不僅是味覺的享受，更是一場體面的社交表演。
+                    </p>
+                    <div class="p-6 border-l-2 border-brand-gold bg-brand-gold/5 italic">
+                        對許多家庭而言，這裡是三代同堂的公約數——阿公相親、爸爸慶功、孫子體驗，傳承著那口懷念的滋味。
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="aspect-square bg-gradient-to-br from-brand-gold/20 to-transparent rounded-full absolute -top-10 -right-10 w-64 h-64 blur-3xl opacity-30 animate-pulse"></div>
+                    <div class="content-card p-10 rounded-3xl relative z-10">
+                        <div class="font-english text-6xl font-black text-brand-gold/20 mb-6">01</div>
+                        <h4 class="text-xl font-display font-bold mb-4 text-white">見證時代演進</h4>
+                        <p class="text-sm leading-loose opacity-60">
+                            從鐵道時代到行人徒步區，美觀園已從單純的餐館演化為老台北的地標。它不僅提供食物，更提供了一種跨越時空的集體記憶。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The "Authenticity" Debate -->
+        <section class="mb-32 bg-white/5 p-12 rounded-[3rem] border border-white/10">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-black mb-6">台味之爭：誰定義了「正統」？</h2>
+                <p class="text-white/60">這種「台式日料」並非對日本文化的拙劣模仿，而是一種文化轉譯。</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6">
+                    <div class="text-brand-gold text-4xl mb-4 font-english font-black">和漢</div>
+                    <p class="text-sm opacity-70 leading-relaxed">融合台灣本土飲食習慣後「在地化」的結果，具有強大的生命力。</p>
+                </div>
+                <div class="text-center p-6 border-x border-white/10">
+                    <div class="text-brand-gold text-4xl mb-4 font-english font-black">豪邁</div>
+                    <p class="text-sm opacity-70 leading-relaxed">「天王級」巨大玻璃杯裝滿生啤酒，搭配充滿飽足感的招牌快餐。</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-brand-gold text-4xl mb-4 font-english font-black">渴望</div>
+                    <p class="text-sm opacity-70 leading-relaxed">反映戰後社會渴望豐饒、純樸且直接的生命力與滿足感。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Twin Story -->
+        <section class="mb-32 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <div>
+                <h2 class="text-3xl font-display font-black mb-8 border-b border-brand-gold/30 pb-4 inline-block">峨眉街的「美麗誤會」</h2>
+                <p class="text-white/70 mb-6">
+                    對於遊客來說，最大的爭議莫過於：對面也叫美觀園，到底是哪一家才正宗？這背後其實是 1946 年創始後，於 1999 年上演的一場「兄弟分家」。
+                </p>
+                <div class="space-y-4">
+                    <div class="content-card p-6 rounded-xl hover:translate-x-2 transition-transform">
+                        <h5 class="text-brand-gold font-bold mb-2">36 號店（台北城老舖）</h5>
+                        <p class="text-sm opacity-60">由長子經營。展現了數位時代的適應力，透過老屋改裝、加強數位行銷與網購，成功打入國際觀光客清單，讓老靈魂穿上新衣。</p>
+                    </div>
+                    <div class="content-card p-6 rounded-xl hover:translate-x-2 transition-transform">
+                        <h5 class="text-brand-gold font-bold mb-2">47 號店（創始原址店）</h5>
+                        <p class="text-sm opacity-60">由次子與三子守候。維持著傳統裝修氛圍，以「不變應萬變」的姿態，為追求懷舊氣氛的老顧客提供心靈避風港。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative pt-12">
+                <div class="bg-brand-dark border-2 border-brand-gold/20 aspect-[4/5] rounded-2xl overflow-hidden relative group">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-gold/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="absolute inset-0 flex items-center justify-center p-12 text-center flex-col">
+                        <span class="font-english text-8xl opacity-10 font-black absolute">VS</span>
+                        <h3 class="text-2xl font-display font-bold text-white mb-4 relative z-10">一場關於傳統與現代的實驗</h3>
+                        <p class="text-sm text-white/60 relative z-10 leading-loose">
+                            這不是慘烈的商業競爭，更像是一場田野實驗。兩家店系出同門，卻展現了截然不同的演化策略。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future & Conclusion -->
+        <section class="mb-20 text-center max-w-3xl mx-auto">
+            <h2 class="text-3xl font-display font-black mb-8 text-gradient">你要吃的是哪一種歷史？</h2>
+            <div class="text-lg text-white/80 leading-relaxed space-y-6">
+                <p>
+                    美觀園不需要變成另一間精緻的無菜單料理，它的靈魂在於那種熱熱鬧鬧、充滿溫度且不拘小節的台式人情味。
+                </p>
+                <p>
+                    無論你選擇 36 號的時尚進化，還是 47 號的老派浪漫，當那份厚實的生魚片入口，你品嚐的不僅是食材，更是台北這座城市在時間淘洗下，最豪爽的一段記憶。
+                </p>
+            </div>
+            
+            <div class="mt-16 pt-16 border-t border-white/10">
+                <div class="inline-flex flex-col items-center">
+                    <p class="font-english text-[10px] tracking-[0.4em] uppercase opacity-40 mb-4">Curated Narrative</p>
+                    <div class="text-brand-gold font-display text-xl font-bold">美觀園 ‧ MIKUANYUAN</div>
+                    <div class="mt-8 flex space-x-2">
+                        <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                        <div class="w-2 h-2 rounded-full bg-brand-gold/40"></div>
+                        <div class="w-2 h-2 rounded-full bg-brand-gold/20"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Action Element -->
+    <div class="fixed bottom-10 right-10 z-50 animate-float hidden md:block">
+        <button class="bg-brand-gold text-brand-dark px-6 py-3 rounded-full font-english font-black text-xs tracking-widest shadow-2xl hover:scale-105 transition-transform uppercase">
+            Book Experience
+        </button>
+    </div>
+
+    <!-- Background Elements -->
+    <div class="fixed top-0 left-0 w-full h-full -z-10 pointer-events-none">
+        <div class="absolute top-[20%] left-[10%] w-96 h-96 bg-brand-gold/5 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-[10%] right-[5%] w-[500px] h-[500px] bg-brand-accent/5 rounded-full blur-[150px]"></div>
+    </div>
+
+</body>
+</html>
